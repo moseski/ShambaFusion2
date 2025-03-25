@@ -34,7 +34,7 @@ function Hero({ title, description, imagePath, primaryAction, secondaryAction })
                 <div className="flex-1 mb-8 lg:mb-0">
                     <img 
                         src={imagePath} 
-                        alt="ShambaFusion marketplace" 
+                        alt="SmartAgriMarket marketplace" 
                         className="w-full h-auto rounded-lg shadow-lg"
                     />
                 </div>

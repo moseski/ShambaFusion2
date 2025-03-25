@@ -13,7 +13,7 @@ function SideBar() {
             <div className="p-4 border-b border-primary/10">
                 <h2 className="text-2xl font-bold flex items-center space-x-2">
                     <Menu className="h-6 w-6" />
-                    <span>Shamba Fusion</span>
+                    <span>SmartAgriMarket</span>
                 </h2>
             </div>
             <nav className="flex-1 overflow-y-auto">
@@ -35,7 +35,7 @@ function SideBar() {
             </nav>
             <div className="p-4 border-t border-primary/10">
                 <p className="text-xs text-center text-primary-foreground/60">
-                    © 2024 Shamba Fusion
+                    © 2024 SmartAgriMarket
                 </p>
             </div>
         </aside>

@@ -15,7 +15,7 @@ function Header() {
         {/* Branding */}
         <div className="text-xl font-bold">
           <Link href="/" className="text-white hover:text-gray-200">
-            ShambaFusion
+          SmartAgrimarket
           </Link>
         </div>
 
@@ -123,7 +123,7 @@ export default function DiseaseDetailsPage({ details }) {
 //         {/* Branding */}
 //         <div className="text-xl font-bold">
 //           <Link href="/" className="text-white hover:text-gray-200">
-//             ShambaFusion
+//             SmartAgrimarket
 //           </Link>
 //         </div>
         

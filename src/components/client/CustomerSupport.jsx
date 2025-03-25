@@ -23,7 +23,7 @@ const CustomerSupport = () => {
                         <AtSymbolIcon className="h-12 w-12 text-red-600 mx-auto mb-4" />
                         <h3 className="text-xl font-semibold mb-2">Email Support</h3>
                         <p className="text-gray-600">Email us at:</p>
-                        <p className="text-gray-800 font-bold">support@shambafusion.com</p>
+                        <p className="text-gray-800 font-bold">support@smartagrimarket.com</p>
                     </div>
 
                     {/* Live Chat Support */}

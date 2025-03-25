@@ -16,7 +16,7 @@ function Header() {
         {/* Branding */}
         <div className="text-xl font-bold">
           <Link to="/" className="text-white hover:text-gray-200">
-            ShambaFusion
+          SmartAgrimarket
           </Link>
         </div>
         

@@ -18,7 +18,7 @@ function About() {
             <Header />
             <Hero 
                 title="About Us"
-                description="Discover the story behind ShambaFusion and our mission to connect farmers directly with consumers."
+                description="Discover the story behind SmartAgrimarket and our mission to connect farmers directly with consumers."
                 imagePath={StoryImage} // Update this with the appropriate image
             />
             <Story />

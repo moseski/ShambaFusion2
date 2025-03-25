@@ -1,82 +1,180 @@
-import { useRole } from '@/hooks/useRole';
-import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+// import { useRole } from '@/hooks/useRole';
+// import { useState } from 'react';
+// import { useNavigate } from 'react-router-dom';
 
+
+// function Role() {
+//     const navigate = useNavigate();
+//     const {role, changeRole} = useRole();
+//     const [selectedRole, setSelectedRole] = useState('');
+
+//     const handleRoleChange = (role) => {
+//         setSelectedRole(role);
+//         // onSelectRole(role);  // Passes the selected role to the parent component
+//         changeRole(role)
+//         setTimeout(()=> {
+//             console.log("Redirecting you to the login page")
+//             navigate("/login");
+//         }, 2000)
+//     };
+
+//     return (
+//         <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 py-10">
+//             <h2 className="text-3xl font-bold mb-8">Choose Your Role</h2>
+//             <div className="space-y-6 w-full max-w-2xl">
+
+//                 {/* Buyer Role */}
+//                 <div
+//                     onClick={() => handleRoleChange('buyer')}
+//                     className={`p-6 bg-white rounded-lg shadow-md cursor-pointer ${
+//                         selectedRole === 'Buyer' ? 'border-4 border-blue-500' : 'border'
+//                     } hover:border-blue-500 transition-all`}
+//                 >
+//                     <h3 className="text-xl font-semibold">Buyer</h3>
+//                     <p className="mt-2 text-gray-600">
+//                         As a buyer, you will have direct access to purchase products from farmers without any middlemen. 
+//                         Enjoy fresh produce and support local agriculture.
+//                     </p>
+//                 </div>
+
+//                 {/* Seller Role */}
+//                 <div
+//                     onClick={() => handleRoleChange('seller')}
+//                     className={`p-6 bg-white rounded-lg shadow-md cursor-pointer ${
+//                         selectedRole === 'Seller' ? 'border-4 border-green-500' : 'border'
+//                     } hover:border-green-500 transition-all`}
+//                 >
+//                     <h3 className="text-xl font-semibold">Seller (Farmer)</h3>
+//                     <p className="mt-2 text-gray-600">
+//                         As a seller, you can list your products directly to interested buyers. Cut out the middlemen and 
+//                         gain control over your pricing and distribution.
+//                     </p>
+//                 </div>
+
+//                 {/* Vendor Role */}
+//                 <div
+//                     onClick={() => handleRoleChange('vendor')}
+//                     className={`p-6 bg-white rounded-lg shadow-md cursor-pointer ${
+//                         selectedRole === 'Vendor' ? 'border-4 border-red-500' : 'border'
+//                     } hover:border-red-500 transition-all`}
+//                 >
+//                     <h3 className="text-xl font-semibold">Vendor (Logistics Provider)</h3>
+//                     <p className="mt-2 text-gray-600">
+//                         As a vendor, you'll assist with logistics and delivery of products from sellers to buyers, 
+//                         ensuring a smooth and efficient process for both parties.
+//                     </p>
+//                 </div>
+
+//             </div>
+
+//             {/* Display the selected role */}
+//             <div className="mt-8">
+//                 {selectedRole && (
+//                     <p className="text-lg font-bold">
+//                         You have selected: <span className="text-blue-600">{selectedRole}</span>
+//                     </p>
+//                 )}
+//             </div>
+//         </div>
+//     );
+// }
+
+// export default Role;
+"use client"
+
+import { useRole } from "@/hooks/useRole"
+import { useState } from "react"
+import { useNavigate } from "react-router-dom"
 
 function Role() {
-    const navigate = useNavigate();
-    const {role, changeRole} = useRole();
-    const [selectedRole, setSelectedRole] = useState('');
+  const navigate = useNavigate()
+  const { role, changeRole } = useRole()
+  const [selectedRole, setSelectedRole] = useState("")
 
-    const handleRoleChange = (role) => {
-        setSelectedRole(role);
-        // onSelectRole(role);  // Passes the selected role to the parent component
-        changeRole(role)
-        setTimeout(()=> {
-            console.log("Redirecting you to the login page")
-            navigate("/login");
-        }, 2000)
-    };
+  const handleRoleChange = (role) => {
+    setSelectedRole(role)
+    changeRole(role)
 
-    return (
-        <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 py-10">
-            <h2 className="text-3xl font-bold mb-8">Choose Your Role</h2>
-            <div className="space-y-6 w-full max-w-2xl">
+    // Redirect to the appropriate dashboard based on role
+    setTimeout(() => {
+      console.log(`Redirecting you to the ${role} dashboard`)
 
-                {/* Buyer Role */}
-                <div
-                    onClick={() => handleRoleChange('buyer')}
-                    className={`p-6 bg-white rounded-lg shadow-md cursor-pointer ${
-                        selectedRole === 'Buyer' ? 'border-4 border-blue-500' : 'border'
-                    } hover:border-blue-500 transition-all`}
-                >
-                    <h3 className="text-xl font-semibold">Buyer</h3>
-                    <p className="mt-2 text-gray-600">
-                        As a buyer, you will have direct access to purchase products from farmers without any middlemen. 
-                        Enjoy fresh produce and support local agriculture.
-                    </p>
-                </div>
+      // Redirect to the appropriate dashboard path
+      switch (role) {
+        case "seller":
+          navigate("/dashboard")
+          break
+        case "buyer":
+          navigate("/dashboard")
+          break
+        case "vendor":
+          navigate("/dashboard")
+          break
+        default:
+          navigate("/login")
+      }
+    }, 2000)
+  }
 
-                {/* Seller Role */}
-                <div
-                    onClick={() => handleRoleChange('seller')}
-                    className={`p-6 bg-white rounded-lg shadow-md cursor-pointer ${
-                        selectedRole === 'Seller' ? 'border-4 border-green-500' : 'border'
-                    } hover:border-green-500 transition-all`}
-                >
-                    <h3 className="text-xl font-semibold">Seller (Farmer)</h3>
-                    <p className="mt-2 text-gray-600">
-                        As a seller, you can list your products directly to interested buyers. Cut out the middlemen and 
-                        gain control over your pricing and distribution.
-                    </p>
-                </div>
-
-                {/* Vendor Role */}
-                <div
-                    onClick={() => handleRoleChange('vendor')}
-                    className={`p-6 bg-white rounded-lg shadow-md cursor-pointer ${
-                        selectedRole === 'Vendor' ? 'border-4 border-red-500' : 'border'
-                    } hover:border-red-500 transition-all`}
-                >
-                    <h3 className="text-xl font-semibold">Vendor (Logistics Provider)</h3>
-                    <p className="mt-2 text-gray-600">
-                        As a vendor, you'll assist with logistics and delivery of products from sellers to buyers, 
-                        ensuring a smooth and efficient process for both parties.
-                    </p>
-                </div>
-
-            </div>
-
-            {/* Display the selected role */}
-            <div className="mt-8">
-                {selectedRole && (
-                    <p className="text-lg font-bold">
-                        You have selected: <span className="text-blue-600">{selectedRole}</span>
-                    </p>
-                )}
-            </div>
+  return (
+    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 py-10">
+      <h2 className="text-3xl font-bold mb-8">Choose Your Role</h2>
+      <div className="space-y-6 w-full max-w-2xl">
+        {/* Buyer Role */}
+        <div
+          onClick={() => handleRoleChange("buyer")}
+          className={`p-6 bg-white rounded-lg shadow-md cursor-pointer ${
+            selectedRole === "buyer" ? "border-4 border-blue-500" : "border"
+          } hover:border-blue-500 transition-all`}
+        >
+          <h3 className="text-xl font-semibold">Buyer</h3>
+          <p className="mt-2 text-gray-600">
+            As a buyer, you will have direct access to purchase products from farmers without any middlemen. Enjoy fresh
+            produce and support local agriculture.
+          </p>
         </div>
-    );
+
+        {/* Seller Role */}
+        <div
+          onClick={() => handleRoleChange("seller")}
+          className={`p-6 bg-white rounded-lg shadow-md cursor-pointer ${
+            selectedRole === "seller" ? "border-4 border-green-500" : "border"
+          } hover:border-green-500 transition-all`}
+        >
+          <h3 className="text-xl font-semibold">Seller (Farmer)</h3>
+          <p className="mt-2 text-gray-600">
+            As a seller, you can list your products directly to interested buyers. Cut out the middlemen and gain
+            control over your pricing and distribution.
+          </p>
+        </div>
+
+        {/* Vendor Role */}
+        <div
+          onClick={() => handleRoleChange("vendor")}
+          className={`p-6 bg-white rounded-lg shadow-md cursor-pointer ${
+            selectedRole === "vendor" ? "border-4 border-red-500" : "border"
+          } hover:border-red-500 transition-all`}
+        >
+          <h3 className="text-xl font-semibold">Vendor (Logistics Provider)</h3>
+          <p className="mt-2 text-gray-600">
+            As a vendor, you'll assist with logistics and delivery of products from sellers to buyers, ensuring a smooth
+            and efficient process for both parties.
+          </p>
+        </div>
+      </div>
+
+      {/* Display the selected role */}
+      <div className="mt-8">
+        {selectedRole && (
+          <p className="text-lg font-bold">
+            You have selected: <span className="text-blue-600">{selectedRole}</span>
+            <p className="text-sm text-gray-600 mt-2">Redirecting to dashboard in 2 seconds...</p>
+          </p>
+        )}
+      </div>
+    </div>
+  )
 }
 
-export default Role;
+export default Role
+

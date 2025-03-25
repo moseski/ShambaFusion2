@@ -9,7 +9,7 @@ function Footer() {
             <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
                 {/* Branding Section */}
                 <div className="flex flex-col items-center md:items-start">
-                    <h3 className="text-2xl font-bold">ShambaFusion</h3>
+                    <h3 className="text-2xl font-bold">SmartAgriMarket</h3>
                     <p className="text-sm mt-2 text-gray-200">
                         Empowering farmers, connecting consumers, fostering sustainability.
                     </p>
@@ -30,7 +30,7 @@ function Footer() {
                 {/* Contact Information Section */}
                 <div className="flex flex-col items-center md:items-start">
                     <h4 className="text-lg font-semibold">Contact Us</h4>
-                    <p className="mt-2 text-gray-200">Email: info@shambafusion.com</p>
+                    <p className="mt-2 text-gray-200">Email: info@smartagrimarket.com</p>
                     <p className="mt-1 text-gray-200">Phone: +254 700 000 000</p>
 
                     {/* Social Media Icons */}
@@ -51,7 +51,7 @@ function Footer() {
             {/* Copyright Section */}
             <div className="text-center mt-8 border-t-gray-600 border-green-700 pt-4">
                 <p className="text-sm text-gray-300">
-                    &copy; {new Date().getFullYear()} ShambaFusion. All rights reserved.
+                    &copy; {new Date().getFullYear()} SmartAgriMarket. All rights reserved.
                 </p>
             </div>
         </footer>

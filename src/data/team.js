@@ -15,7 +15,7 @@ const teamMembers = [
     //     name: 'Jane Smith',
     //     role: 'CTO',
     //     image: TeamMember2,
-    //     description: 'With a strong background in technology, Jane drives innovation at ShambaFusion.'
+    //     description: 'With a strong background in technology, Jane drives innovation at SmartAgrimarket.'
     // },
     // {
     //     name: 'Alex Johnson',

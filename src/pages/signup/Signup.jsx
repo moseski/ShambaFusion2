@@ -77,13 +77,13 @@
 //                     <div className="hidden lg:block lg:w-1/2">
 //                         <img 
 //                             src={SignupImage} 
-//                             alt="ShambaFusion illustration" 
+//                             alt="SmartAgrimarket illustration" 
 //                             className="w-full h-full object-cover rounded-l-lg" 
 //                         />
 //                     </div>
 //                     <div className="lg:w-1/2 p-8">
 //                         <CardHeader>
-//                             <CardTitle className="text-3xl font-bold text-center">Karibu ShambaFusion</CardTitle>
+//                             <CardTitle className="text-3xl font-bold text-center">Karibu SmartAgrimarket</CardTitle>
 //                             <CardDescription className="text-center">Create your account to get started</CardDescription>
 //                         </CardHeader>
 //                         <CardContent>
@@ -305,7 +305,7 @@ const Signup = () => {
                     <div className="hidden lg:flex flex-1">
                         <img 
                             src={SignupImage} 
-                            alt="ShambaFusion illustration" 
+                            alt="SmartAgrimarket illustration" 
                             className="w-full h-full object-cover rounded-l-lg" 
                         />
                     </div>

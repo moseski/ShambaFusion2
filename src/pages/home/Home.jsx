@@ -20,7 +20,7 @@ function Home() {
            
             <Header />
             <Hero 
-                title="Welcome to Shamba Fusion"
+                title="Welcome to SmartAgrimarket"
                 description="Connecting you directly to fresh, quality and locally grown tomatoes. No brokers. No middlemen. Just farm-to-table goodness."
                 imagePath={HeroImage}
                 primaryAction={{text: "Explore the market", href: "/market"}}

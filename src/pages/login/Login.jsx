@@ -77,7 +77,7 @@ const Login = () => {
                     <div className="hidden lg:block lg:w-1/2">
                         <img 
                             src={LoginImage} 
-                            alt="ShambaFusion illustration" 
+                            alt="SmartAgrimarket illustration" 
                             className="w-full h-full object-cover rounded-l-lg" 
                         />
                     </div>

@@ -1,7 +1,7 @@
 const milestones = [
     {
         year: '2020',
-        description: 'Launched ShambaFusion, connecting farmers directly to customers.'
+        description: 'Launched SmartAgriMarket, connecting farmers directly to customers.'
     },
     {
         year: '2021',

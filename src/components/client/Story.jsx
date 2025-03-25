@@ -5,7 +5,7 @@ function Story() {
                 <div className="container mx-auto px-6">
                     <h2 className="text-3xl font-bold text-center mb-8 text-red-500">Our Story</h2>
                     <p className="text-lg text-gray-700 mb-6">
-                        At ShambaFusion, we believe in empowering local farmers by providing them with a platform to sell their produce directly to consumers with predictive market analysis. 
+                        At SmartAgriMarket, we believe in empowering local farmers by providing them with a platform to sell their produce directly to consumers with predictive market analysis. 
                         Our journey began with a simple idea: to eliminate the middlemen,provide predictive market analysis and create a sustainable agricultural ecosystem that benefits everyone involved.
                     </p>
                     <p className="text-lg text-gray-700 mb-6">

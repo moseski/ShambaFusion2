@@ -7,7 +7,7 @@ function Impact() {
             <div className="container mx-auto px-6">
                 <h2 className="text-3xl font-bold text-center mb-8 text-red-600">Our Impact</h2>
                 <p className="text-gray-700 text-center mb-8">
-                    At ShambaFusion, we are dedicated to making a positive difference in the lives of local farmers and the community.
+                    At SmartAgriMarket, we are dedicated to making a positive difference in the lives of local farmers and the community.
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                     <div className="p-6 bg-green-100 rounded-lg shadow-md text-center">

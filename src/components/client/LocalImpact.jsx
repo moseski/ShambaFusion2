@@ -8,7 +8,7 @@ function LocalImpact({ stats }) {
             <div className="container mx-auto text-center mb-12">
                 <h2 className="text-3xl font-bold text-red-600">Our Local Impact</h2>
                 <p className="text-gray-700 mt-2 max-w-2xl mx-auto">
-                    At ShambaFusion, we are committed to empowering local farmers, supporting sustainable practices, 
+                    At SmartAgriMarket, we are committed to empowering local farmers, supporting sustainable practices, 
                     and delivering fresh, high-quality produce to our customers. Here's how we’re making a difference.
                 </p>
             </div>
@@ -23,7 +23,7 @@ function LocalImpact({ stats }) {
             <div className="text-center">
                 <h3 className="text-xl font-semibold text-red-600 mb-4">Success Stories</h3>
                 <p className="text-gray-700 max-w-xl mx-auto">
-                    "Since joining ShambaFusion, my family farm has seen a 30% increase in income. We now reach customers directly 
+                    "Since joining SmartAgriMarket, my family farm has seen a 30% increase in income. We now reach customers directly 
                     and have built lasting relationships with buyers."
                 </p>
                 <p className="mt-4 text-red-600">- Mary Njoroge, Sunrise Farms</p>

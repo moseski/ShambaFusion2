@@ -7,7 +7,7 @@ function Testimonials({ reviews }) {
             <div className="container mx-auto text-center mb-12">
                 <h2 className="text-3xl font-bold text-red-600">What Our Users Are Saying</h2>
                 <p className="text-gray-600 mt-2 max-w-2xl mx-auto">
-                    Hear from the farmers and customers who have found success and satisfaction through ShambaFusion.
+                    Hear from the farmers and customers who have found success and satisfaction through SmartAgriMarket.
                 </p>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 container mx-auto">
